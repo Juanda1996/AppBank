@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace bankApp.domain.Interfaces
 {
-	internal interface IDelete
+	public interface IDelete<TEntityID>
 	{
+		void Delete(TEntityID entityID);
 	}
 }

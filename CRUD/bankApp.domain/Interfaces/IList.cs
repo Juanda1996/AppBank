@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace bankApp.domain.Interfaces
 {
-	internal interface IList
+	public interface IList<TEntity, TEntityID>
 	{
+		List<TEntity> GetAll();
+		TEntity SelectionByID(TEntityID entityID);
 	}
 }

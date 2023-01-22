@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace bankApp.domain.Interfaces
 {
-	internal interface ISave
+	public interface ISave
 	{
+		void SaveChanges();
 	}
 }

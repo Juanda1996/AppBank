@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace bankApp.domain.Interfaces
 {
-	internal interface IEdit
+	public interface IEdit <TEntity>
 	{
+		void Edit (TEntity entity);
 	}
 }

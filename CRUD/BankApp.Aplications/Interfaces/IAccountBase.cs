@@ -1,13 +1,14 @@
-﻿using System;
+﻿using bankApp.domain.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using bankApp.domain.Interfaces;
 
-namespace bankApp.domain.Interfaces.Repositories
+namespace BankApp.Aplications.Interfaces
 {
-	public interface IRepositoryAccount<TEntity, TEntityID> : IAdd<TEntity>, IList<TEntity, TEntityID>, ISave
+	public interface IAccountBase<TEntity, TEntityID>
+	: IAdd<TEntity>, IList<TEntity, TEntityID>
 	{
 		void CancelAccount(TEntity entity);
 		void ChangeStatus(TEntity entity);

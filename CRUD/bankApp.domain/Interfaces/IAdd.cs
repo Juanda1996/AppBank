@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace bankApp.domain.Interfaces
 {
-	internal interface IAdd
+	public interface IAdd <TEntity>
 	{
+		TEntity Add(TEntity entity);
 	}
 }
